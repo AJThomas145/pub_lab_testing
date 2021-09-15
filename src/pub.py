@@ -10,3 +10,12 @@ class Pub:
 
     def add_cash_to_till(self, price_of_drink):
         self.till += price_of_drink
+
+    def add_drink_to_list(self, drink):
+        self.drinks_list.append(drink)
+
+    def remove_drink_from_list(self, drink):
+        self.drinks_list.remove(drink)
+
+    def sell_drink_to_customer(self, customer, drink):
+        number_of_drinks
