@@ -17,5 +17,14 @@ class Pub:
     def remove_drink_from_list(self, drink):
         self.drinks_list.remove(drink)
 
+    def customer_is_old_enough(self, customer):
+        if customer.age >= 18:
+            return True
+
+        return False
+
     def sell_drink_to_customer(self, customer, drink):
-        number_of_drinks
+        customer.pay_for_drink(drink.price)
+        self.add_cash_to_till(drink.price)
+        self.remove_drink_from_list(drink)
+        

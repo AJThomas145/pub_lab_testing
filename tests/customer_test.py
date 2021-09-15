@@ -5,7 +5,7 @@ from src.drink import Drink
 class TestCustomer(unittest.TestCase):
 
     def setUp(self):
-        self.customer = Customer("Simon", 30.00)
+        self.customer = Customer("Simon", 30.00, 16)
         self.drink = Drink("beer", 5.00)
 
     def test_does_customer_have_name(self):
